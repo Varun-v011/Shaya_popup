@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState, type ReactNode } from 'react';
 
-interface ScrollRevealProps {
+export interface ScrollRevealProps {
   children: ReactNode;
   effect?: 'highlight' | 'move';
   className?: string;
@@ -10,7 +10,7 @@ interface ScrollRevealProps {
 
 export default function ScrollReveal({
   children,
-  effect = 'highlight',
+  effect = 'highlight' || 'move',
   className = '',
   highlightColor = 'yellow',
   ...rest
