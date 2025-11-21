@@ -1,6 +1,8 @@
 
 import './App.css'
 import Aboutpg from './About'
+import React from 'react'
+
 
 
 export default function App(){
